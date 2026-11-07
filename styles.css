@@ -5,10 +5,10 @@
   --mut:#4a5b66;           /* texto secundário, 6.5:1 */
   --soft:#5e7886;          /* texto grande/decorativo, 4.4:1 */
   --line:#dde3e0;
-  --acc:#0b6b52;           /* esmeralda, 6.2:1 */
-  --acc-strong:#084c3a;
+  --acc:#0d2464;           /* esmeralda, 6.2:1 */
+  --acc-strong:#00023d;
   --acc-tint:#e3f3ec;
-  --acc-on-dark:#5fd3a6;   /* esmeralda claro sobre navy, 9:1 */
+  --acc-on-dark:#5fb4d3;   /* esmeralda claro sobre navy, 9:1 */
   --on-dark-mut:#a9bbc4;
   --gold:#c8963e;
   --font-display:"Manrope","Inter",system-ui,sans-serif;
