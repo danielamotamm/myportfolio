@@ -1,0 +1,162 @@
+- generic [active] [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - link "Uniathenas" [ref=f1e3] [cursor=pointer]:
+      - /url: "#top"
+    - navigation [ref=f1e5]:
+      - link "Serviços" [ref=f1e6] [cursor=pointer]:
+        - /url: "#servicos"
+      - link "Processo" [ref=f1e7] [cursor=pointer]:
+        - /url: "#processo"
+      - link "Resultados" [ref=f1e8] [cursor=pointer]:
+        - /url: "#numeros"
+      - link "FAQ" [ref=f1e9] [cursor=pointer]:
+        - /url: "#faq"
+    - link "Falar com especialista" [ref=f1e10] [cursor=pointer]:
+      - /url: "#contato"
+  - main [ref=f1e11]:
+    - generic [ref=f1e12]:
+      - paragraph [ref=f1e13]: Comércio exterior · 2026
+      - heading "Fronteiras não deveriamser um obstáculo." [level=1] [ref=f1e14]:
+        - generic [ref=f1e15]: Fronteiras
+        - generic [ref=f1e17]: não
+        - generic [ref=f1e19]: deveriam
+        - generic [ref=f1e21]:
+          - generic [ref=f1e22]: ser
+          - generic [ref=f1e24]: um
+          - generic [ref=f1e26]: obstáculo.
+      - paragraph [ref=f1e28]: Importação, exportação e logística internacional em uma única plataforma — com conformidade automatizada, rastreio em tempo real e custos previsíveis.
+      - generic [ref=f1e29]:
+        - link "Solicitar proposta" [ref=f1e30] [cursor=pointer]:
+          - /url: "#contato"
+        - link "Como funciona →" [ref=f1e31] [cursor=pointer]:
+          - /url: "#processo"
+      - list [ref=f1e32]:
+        - listitem [ref=f1e33]: ✓ Proposta em até 24h
+        - listitem [ref=f1e34]: ✓ Sem taxas ocultas
+        - listitem [ref=f1e35]: ✓ Licenciados pela Receita Federal
+      - generic [aria-hidden] [ref=f1e36]:
+        - generic [ref=f1e37]:
+          - generic [ref=f1e38]: "Embarque #UA-20418"
+          - generic [ref=f1e39]: Em trânsito
+        - generic [ref=f1e47]:
+          - generic [ref=f1e48]: Santos, BR
+          - generic [ref=f1e50]: Roterdã, NL
+        - generic [ref=f1e53]:
+          - generic [ref=f1e54]:
+            - generic [ref=f1e55]: ETA
+            - strong [ref=f1e56]: 12 dias
+          - generic [ref=f1e57]:
+            - generic [ref=f1e58]: Despacho
+            - strong [ref=f1e59]: Liberado
+          - generic [ref=f1e60]:
+            - generic [ref=f1e61]: Custo total
+            - strong [ref=f1e62]: US$ 18.420
+    - region "Mercados atendidos" [ref=f1e63]:
+      - generic [ref=f1e64]: Mercosul
+      - generic [ref=f1e65]: União Europeia
+      - generic [ref=f1e66]: EUA
+      - generic [ref=f1e67]: China
+      - generic [ref=f1e68]: Oriente Médio
+      - generic [ref=f1e69]: África
+    - generic [ref=f1e70]:
+      - paragraph [ref=f1e71]: Serviços
+      - heading "Tudo o que sua operação global precisa." [level=2] [ref=f1e72]
+      - generic [ref=f1e73]:
+        - article [ref=f1e74]:
+          - heading "Importação" [level=3] [ref=f1e78]
+          - paragraph [ref=f1e79]: Classificação fiscal, licenças, desembaraço e nacionalização com prazos claros.
+        - article [ref=f1e80]:
+          - heading "Exportação" [level=3] [ref=f1e84]
+          - paragraph [ref=f1e85]: Documentação, drawback, incoterms e acesso a novos mercados com segurança.
+        - article [ref=f1e86]:
+          - heading "Logística internacional" [level=3] [ref=f1e90]
+          - paragraph [ref=f1e91]: Marítimo, aéreo e rodoviário com consolidação de cargas e seguro integrado.
+        - article [ref=f1e92]:
+          - heading "Compliance & tributos" [level=3] [ref=f1e96]
+          - paragraph [ref=f1e97]: Análise tributária e gestão de risco aduaneiro para evitar multas e retenções.
+        - article [ref=f1e98]:
+          - heading "Câmbio & pagamentos" [level=3] [ref=f1e103]
+          - paragraph [ref=f1e104]: Operações cambiais com taxas transparentes e liquidação ágil.
+        - article [ref=f1e105]:
+          - heading "Inteligência de mercado" [level=3] [ref=f1e109]
+          - paragraph [ref=f1e110]: Dados de demanda, concorrência e tarifas para decidir com embasamento.
+    - generic [ref=f1e111]:
+      - paragraph [ref=f1e112]: Processo
+      - heading "Da cotação à entrega, em quatro passos." [level=2] [ref=f1e113]
+      - list [ref=f1e114]:
+        - listitem [ref=f1e115]:
+          - generic [ref=f1e116]: Diagnóstico
+          - paragraph [ref=f1e117]: Mapeamos produto, rota e exigências regulatórias.
+        - listitem [ref=f1e118]:
+          - generic [ref=f1e119]: Planejamento
+          - paragraph [ref=f1e120]: Definimos modal, incoterm e custo total estimado.
+        - listitem [ref=f1e121]:
+          - generic [ref=f1e122]: Execução
+          - paragraph [ref=f1e123]: Cuidamos de documentos, desembaraço e transporte.
+        - listitem [ref=f1e124]:
+          - generic [ref=f1e125]: Acompanhamento
+          - paragraph [ref=f1e126]: Painel em tempo real e relatórios pós-operação.
+    - generic [ref=f1e128]:
+      - generic [ref=f1e129]:
+        - strong [ref=f1e130]:
+          - text: +
+          - generic [ref=f1e131]: "40"
+        - generic [ref=f1e132]: países atendidos
+      - generic [ref=f1e133]:
+        - strong [ref=f1e134]:
+          - text: "-"
+          - generic [ref=f1e135]: "27"
+          - text: "%"
+        - generic [ref=f1e136]: tempo médio de desembaraço
+      - generic [ref=f1e137]:
+        - strong [ref=f1e138]:
+          - generic [ref=f1e139]: 99,2
+          - text: "%"
+        - generic [ref=f1e140]: entregas no prazo
+      - generic [ref=f1e141]:
+        - strong [ref=f1e142]:
+          - text: +
+          - generic [ref=f1e143]: "3.500"
+        - generic [ref=f1e144]: operações por ano
+    - region "Depoimentos" [ref=f1e145]:
+      - paragraph [ref=f1e146]: Clientes
+      - heading "Quem exporta com a gente, cresce." [level=2] [ref=f1e147]
+      - generic [ref=f1e148]:
+        - blockquote [ref=f1e149]:
+          - paragraph [ref=f1e150]: “Reduzimos o custo logístico em 18% no primeiro semestre e passamos a exportar para três novos países.”
+          - generic [ref=f1e151]: Camila R. · Diretora de Operações, indústria alimentícia
+        - blockquote [ref=f1e152]:
+          - paragraph [ref=f1e153]: “O painel em tempo real acabou com as dúvidas sobre onde estava cada carga. Previsibilidade total.”
+          - generic [ref=f1e154]: Henrique T. · CFO, importadora de autopeças
+        - blockquote [ref=f1e155]:
+          - paragraph [ref=f1e156]: “Nossa primeira exportação foi tranquila. A equipe cuidou de toda a documentação.”
+          - generic [ref=f1e157]: Marina S. · Fundadora, cosméticos naturais
+      - paragraph [ref=f1e158]: Depoimentos ilustrativos — substitua por casos reais.
+    - generic [ref=f1e159]:
+      - paragraph [ref=f1e160]: FAQ
+      - heading "Perguntas frequentes" [level=2] [ref=f1e161]
+      - group [ref=f1e162]:
+        - generic "Atendem empresas que nunca exportaram? +" [ref=f1e163] [cursor=pointer]
+      - group [ref=f1e164]:
+        - generic "Como é composto o custo? +" [ref=f1e165] [cursor=pointer]
+      - group [ref=f1e166]:
+        - generic "Posso acompanhar minhas cargas? +" [ref=f1e167] [cursor=pointer]
+    - generic [ref=f1e168]:
+      - heading "Pronto para expandir globalmente?" [level=2] [ref=f1e169]
+      - paragraph [ref=f1e170]: Conte-nos sobre sua operação e retornamos em até 1 dia útil.
+      - generic [ref=f1e171]:
+        - textbox "Nome" [ref=f1e172]
+        - textbox "E-mail corporativo" [ref=f1e173]
+        - combobox "Tipo de operação" [ref=f1e174]:
+          - option "Operação" [disabled] [selected]
+          - option "Importação"
+          - option "Exportação"
+          - option "Ambas"
+        - button "Solicitar proposta" [ref=f1e175] [cursor=pointer]
+      - paragraph [ref=f1e176]: 🔒 Seus dados são usados apenas para contato. Sem spam.
+      - status [ref=f1e177]
+  - contentinfo [ref=f1e178]:
+    - generic [ref=f1e179]: © 2026 Uniathenas Comércio Exterior
+    - generic [ref=f1e180]: diretoria@uniathenas.com.br
+  - link "Solicitar proposta" [ref=f1e181] [cursor=pointer]:
+    - /url: "#contato"

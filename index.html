@@ -1,14 +1,15 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Uniathenas — Comércio Exterior sem fricção</title>
+<title>Uniathenas — Comércio Exterior</title>
 <meta name="description" content="Importação, exportação e logística internacional com visibilidade total, conformidade automatizada e custos previsíveis.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script>if(!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("entry")</script>
 </head>
 <body>
 <header class="nav">
@@ -39,10 +40,10 @@
     <div class="panel" aria-hidden="true">
       <div class="panel-head"><span>Embarque #UA-20418</span><span class="pill"><i class="live"></i>Em trânsito</span></div>
       <svg class="map" viewBox="0 0 600 160" fill="none">
-        <path d="M40 120 C160 20, 400 10, 560 50" stroke="#dde3e0" stroke-width="2" stroke-dasharray="4 6"/>
-        <path class="trail" d="M40 120 C160 20, 400 10, 560 50" stroke="#0b6b52" stroke-width="3" stroke-linecap="round" pathLength="1"/>
-        <circle cx="40" cy="120" r="7" fill="#0b6b52"/><circle cx="560" cy="50" r="7" fill="#fff" stroke="#0b6b52" stroke-width="3"/>
-        <circle class="ship" r="6" fill="#c8963e"><animateMotion dur="6s" repeatCount="indefinite" path="M40 120 C160 20, 400 10, 560 50"/></circle>
+        <path d="M40 120 C160 20, 400 10, 560 50" stroke="#D6E4F0" stroke-width="2" stroke-dasharray="4 6"/>
+        <path class="trail" d="M40 120 C160 20, 400 10, 560 50" stroke="#C9963D" stroke-width="3" stroke-linecap="round" pathLength="1"/>
+        <circle cx="40" cy="120" r="7" fill="#0D2464"/><circle cx="560" cy="50" r="7" fill="#fff" stroke="#0D2464" stroke-width="3"/>
+        <circle class="ship" r="6" fill="#C9963D"><animateMotion dur="6s" repeatCount="indefinite" path="M40 120 C160 20, 400 10, 560 50"/></circle>
       </svg>
       <div class="route"><b>Santos, BR</b><i></i><b>Roterdã, NL</b></div>
       <div class="bar"><span></span></div>
@@ -161,6 +162,7 @@ const io = new IntersectionObserver(entries => entries.forEach(en => {
 document.querySelectorAll('[data-count]').forEach(el => io.observe(el));
 if (!reduce) {
   document.documentElement.classList.add('js-anim');
+  document.querySelectorAll('.steps').forEach(el => io.observe(el));
   document.querySelectorAll('.section .cards article, .steps li, .stats>div, blockquote, details').forEach(el => { el.classList.add('reveal'); io.observe(el); });
 }
 
@@ -168,6 +170,67 @@ const cta = document.querySelector('.sticky-cta'), hero = document.querySelector
 addEventListener('scroll', () => {
   cta.classList.toggle('show', hero.getBoundingClientRect().bottom < 0 && contact.getBoundingClientRect().top > innerHeight);
 }, {passive: true});
+const root = document.documentElement;
+if (root.classList.contains('entry')) {
+  const pre = document.createElement('div');
+  pre.className = 'preloader';
+  pre.setAttribute('aria-hidden', 'true');
+  pre.innerHTML = '<span>Uniathenas</span>';
+  document.body.appendChild(pre);
+  let n = 0;
+  const wrap = node => {
+    if (node.nodeType === 3) {
+      const frag = document.createDocumentFragment();
+      node.textContent.split(/(\s+)/).forEach(p => {
+        if (!p.trim()) { frag.appendChild(document.createTextNode(p)); return; }
+        const w = document.createElement('span'), i = document.createElement('i');
+        w.className = 'w'; i.textContent = p; i.style.setProperty('--i', n++);
+        w.appendChild(i); frag.appendChild(w);
+      });
+      node.replaceWith(frag);
+    } else if (node.nodeType === 1 && node.tagName !== 'BR') [...node.childNodes].forEach(wrap);
+  };
+  const h1 = document.querySelector('.hero h1');
+  h1.setAttribute('aria-label', h1.textContent);
+  wrap(h1);
+  document.querySelectorAll('.hero .eyebrow,.hero .lead,.hero .actions,.hero .trust').forEach((el, k) => el.style.setProperty('--d', k));
+  const start = () => {
+    pre.classList.add('done');
+    root.classList.add('go');
+    setTimeout(() => panel.classList.add('ready'), 2000);
+    setTimeout(() => pre.remove(), 1500);
+  };
+  const ready = document.fonts ? Promise.race([document.fonts.ready, new Promise(r => setTimeout(r, 1500))]) : Promise.resolve();
+  Promise.all([ready, new Promise(r => setTimeout(r, 900))]).then(start);
+}
+
+const nav = document.querySelector('.nav'), panel = document.querySelector('.panel');
+let lastY = scrollY, ticking = false;
+addEventListener('scroll', () => {
+  if (ticking) return;
+  ticking = true;
+  requestAnimationFrame(() => {
+    const y = scrollY;
+    nav.classList.toggle('hide', y > lastY && y > 120 && !nav.contains(document.activeElement));
+    nav.classList.toggle('scrolled', y > 20);
+    lastY = y;
+    if (!reduce && y < innerHeight * 1.5) hero.style.setProperty('--sy', y);
+    ticking = false;
+  });
+}, {passive: true});
+if (!reduce && matchMedia('(hover: hover) and (pointer: fine)').matches) {
+  panel.addEventListener('pointermove', e => {
+    const r = panel.getBoundingClientRect();
+    panel.style.setProperty('--ry', ((e.clientX - r.left) / r.width - .5) * 8 + 'deg');
+    panel.style.setProperty('--rx', (.5 - (e.clientY - r.top) / r.height) * 6 + 'deg');
+  });
+  panel.addEventListener('pointerleave', () => { panel.style.setProperty('--rx', '0deg'); panel.style.setProperty('--ry', '0deg'); });
+}
 </script>
 </body>
 </html>
+
+
+
+
+
